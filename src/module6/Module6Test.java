@@ -42,18 +42,18 @@ public class Module6Test {
         //System.out.println(r3.canPlaceInto(r2));
 
         //  *** TargetFinder ***
-        //int[] aiCoords = {0, 0};
-        //int[][] targets = {
-        //        {20, 20},
-        //        {15, 14},
-        //        {30, 5},
-        //        {40, 12},
-        //        {-1, 3},
-        //        {11, 12}
-        //};
-        //TargetFinder targetFinder = new TargetFinder();
-        //int[] nearestTarget = targetFinder.findTarget(aiCoords, targets);
-        //System.out.println(Arrays.toString(nearestTarget));
+        int[] aiCoords = {0, 0};
+        int[][] targets = {
+                {20, 20},
+                {15, 14},
+                {30, 5},
+                {40, 12},
+                {-1, 3},
+                {11, 12}
+        };
+        TargetFinder targetFinder = new TargetFinder();
+        int[] nearestTarget = targetFinder.findTarget(aiCoords, targets);
+        System.out.println(Arrays.toString(nearestTarget));
 
         //  *** Level ***
         //Level.Point p1 = new Level.Point(20, 30);
