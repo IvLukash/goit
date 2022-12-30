@@ -77,17 +77,14 @@ public class MyHashMap<K,V> implements MyMaps<K,V> {
         Entry<K,V> prevElement = removedElement;
         if (head.key.getKeyValue().equals(key)) {
             head = head.next;
-            removedElement = null;
-            size--;
         } else {
             while (!(removedElement.key.getKeyValue().equals(key))) {
                 prevElement = removedElement;
                 removedElement = removedElement.next;
             }
             prevElement.next = removedElement.next;
-            removedElement = null;
-            size--;
         }
+        size--;
     }
 
     public void clear() {
@@ -95,7 +92,6 @@ public class MyHashMap<K,V> implements MyMaps<K,V> {
             Entry<K,V> removedElement = head.next;
             if (removedElement.hasNext()) {
                 removedElement.next = removedElement;
-                removedElement = null;
             }
             size--;
         }

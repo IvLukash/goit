@@ -1,3 +1,9 @@
 /.idea/
 /out/
 /goit.iml
+.iws
+*.ipr
+HELP.md
+target/
+.DS_Store
+.jar
